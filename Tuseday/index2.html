@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Events Practice</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+
+<body>
+
+    <h1>JavaScript Events Practice</h1>
+
+    <!-- Inline Event -->
+    <button onclick="inlineFunction()">Inline Event</button>
+    <hr>
+
+    <!-- addEventListener -->
+    <button id="clickBtn">Click Me</button>
+
+    <button id="dblBtn">Double Click Me</button>
+    <hr>
+
+    <!-- Mouse Events -->
+    <div id="hoverBox" class="box">
+        Hover Over Me
+    </div>
+    <hr>
+
+    <!-- Keyboard Events -->
+    <input type="text" id="keyboardInput" placeholder="Type Something" />
+    <p id="keyOutput"></p>
+    <hr>
+
+    <!-- Input Event -->
+    <textarea id="message" placeholder="Type here"></textarea>
+    <p>Characters:<span id="count">0</span></p>
+    <hr>
+
+    <!-- Change Event -->
+    <select id="country">
+        <option>Choose</option>
+        <option>Pakistan</option>
+        <option>India</option>
+        <option>Turkey</option>
+    </select>
+    <p id="selectedCountry"></p>
+    <hr>
+
+    <!-- Focus & Blur -->
+    <input type="text" id="focusInput" placeholder="Focus and Blur" style="color: black;"/>
+    <hr>
+
+    <!-- Form Validation -->
+    <h2>Registration Form</h2>
+    <form id="registerForm">
+        <input type="text" id="name" placeholder="Name">
+        <br><br>
+        <input type="email" id="email" placeholder="Email">
+        <br><br>
+        <input type="password" id="password" placeholder="Password">
+        <br><br>
+        <button type="submit">Register</button>
+    </form>
+    <p id="errorMessage" class="error"></p>
+    <hr>
+
+    <!-- Color Picker -->
+    <h2>Color Picker</h2>
+    <div class="swatch red"></div>
+    <div class="swatch green"></div>
+    <div class="swatch blue"></div>
+    <div id="colorBox" class="box"></div>
+    <hr>
+
+    <!-- Bubbling -->
+    <h2>Event Bubbling</h2>
+    <div class="parent" id="parent">
+        Parent
+        <div class="child" id="child">
+            Child
+        </div>
+    </div>
+    <hr>
+
+    <!-- Event Delegation -->
+    <h2>Event Delegation</h2>
+    <input type="text" id="taskInput" placeholder="Add Item" />
+    <button id="addItemBtn">Add Item</button>
+    <ul id="taskList"></ul>
+
+
+
+    <script src="script2.js"></script>
+
+</body>
+
+</html>
